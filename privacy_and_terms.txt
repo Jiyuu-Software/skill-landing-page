@@ -1,0 +1,68 @@
+========================================
+PRIVACY POLICY - SKILLS APP
+========================================
+
+Last updated: March 5, 2026
+
+Skills ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how your information is collected, used, and disclosed by the Skills application.
+
+1. INFORMATION WE COLLECT
+- Usage Data: We collect anonymous usage data (e.g., screens visited, features used) via PostHog to improve the app.
+- Local Data: Your skills, timers, streaks, and session history are stored locally on your device using an SQLite database (Drift). 
+- Purchase Information: If you make an in-app purchase, Apple and RevenueCat securely process the transaction. We do not have access to your payment details.
+
+2. HOW WE USE YOUR INFORMATION
+- To provide, maintain, and improve the application.
+- To analyze usage trends and track crash reports so we can fix bugs.
+- To manage your subscription status for Premium access.
+
+3. THIRD-PARTY SERVICES
+The app uses the following third-party services that may collect information used to identify you:
+- PostHog (Analytics)
+- RevenueCat (Subscription Management)
+- Supabase (Backend infrastructure)
+
+4. DATA RETENTION & DELETION
+Because your skill data and history are stored locally, you can delete this data at any time by uninstalling the app. 
+
+5. CHANGES TO THIS PRIVACY POLICY
+We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
+
+6. CONTACT US
+If you have any questions about this Privacy Policy, please contact us at: [INSERT SUPPORT EMAIL HERE]
+
+========================================
+TERMS OF SERVICE - SKILLS APP
+========================================
+
+Last updated: March 5, 2026
+
+1. ACCEPTANCE OF TERMS
+By downloading or using the Skills app, these terms will automatically apply to you. You should read them carefully before using the app.
+
+2. DESCRIPTION OF SERVICE
+Skills is an application designed to help users track time spent learning and practicing various skills, maintain streaks, and view their progress history.
+
+3. IN-APP PURCHASES & SUBSCRIPTIONS
+- The app offers a free tier (limited to tracking 2 skills).
+- Users can purchase a "Lifetime" or standard subscription via in-app purchases to unlock unlimited skills.
+- Payment will be charged to your Apple ID account at the confirmation of purchase.
+- Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period.
+
+4. USER CONDUCT
+You agree not to use the app in a way that:
+- Violates any applicable laws or regulations.
+- Infringes on the rights of any third party.
+- Attempts to reverse engineer, decompile, or hack the app.
+
+5. DISCLAIMER OF WARRANTIES
+The application is provided "as is" and "as available." We make no warranties, expressed or implied, regarding the app's reliability, accuracy, or suitability for any purpose.
+
+6. LIMITATION OF LIABILITY
+We shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use the app.
+
+7. CHANGES TO TERMS
+We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting.
+
+8. CONTACT
+For any questions regarding these terms, contact us at: [INSERT SUPPORT EMAIL HERE]

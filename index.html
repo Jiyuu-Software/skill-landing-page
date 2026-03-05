@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Build Habits Like a Game</title>
+    <meta name="description" content="A premium, highly gamified habit and skill tracker. Level up your skills, visualize your data, and track absolutely anything.">
+    <link rel="canonical" href="https://yoursite.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Skills">
+    <meta property="og:url" content="https://yoursite.com/">
+    <meta property="og:title" content="Skills - Gamified Habit &amp; Skill Tracker">
+    <meta property="og:description" content="Level up your life. Track your habits, build unbreakable streaks, and visualize your progress with premium heatmaps.">
+    <meta property="og:image" content="https://yoursite.com/assets/social-preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Skills - Gamified Habit &amp; Skill Tracker">
+    <meta name="twitter:description" content="Level up your life. Track your habits, build unbreakable streaks, and visualize your progress with premium heatmaps.">
+    <meta name="twitter:image" content="https://yoursite.com/assets/social-preview.jpg">
+
+    <!-- Structured Data: SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Skills",
+        "description": "A premium, highly gamified habit and skill tracker. Level up your skills, visualize your data, and track absolutely anything.",
+        "applicationCategory": ["LifestyleApplication", "HealthAndFitnessApplication"],
+        "operatingSystem": "iOS, Android",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "1",
+            "bestRating": "5",
+            "worstRating": "1"
+        }
+    }
+    </script>
+
+    <!-- Google Fonts: Inter as the clean sans-serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/main-logo.png" alt="Skills logo" class="logo-icon">
+                <span>Skills</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#premium">Premium</a>
+                <button id="theme-toggle-btn" class="btn btn-secondary" style="padding: 0.5rem 1rem; margin-left: 0.5rem; font-size: 0.9rem;">
+                    <span id="theme-icon">☀️</span>
+                </button>
+                <a href="#download" class="btn btn-nav">Get the App</a>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="menu-overlay"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Build habits. <br><span class="text-gradient">Track skills like a game.</span></h1>
+            <p class="hero-subtitle">Whether you're learning guitar, picking up a new language, shipping your first app, or finally getting serious about drawing, Skills tracks the time you actually put in so progress is easy to see.</p>
+            <div class="store-badges">
+                <a href="#download" class="app-store-badge">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                </a>
+                <a href="#download" class="google-play-badge">
+                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+                </a>
+            </div>
+            <p class="hero-early-access">Now available — start your first streak today.</p>
+        </div>
+
+        <div class="hero-visual">
+            <img src="assets/main-tilted.png" alt="Skills app main perspective mockup" class="main-tilted-img" data-parallax="0.08">
+        </div>
+
+        <!-- Floating skill icon cards (decorative) -->
+        <div class="hero-float-icons" aria-hidden="true">
+            <div class="float-icon float-icon--1">
+                <div class="fi-card"><div class="fi-circle"><img src="assets/main-logo.png" alt="" class="fi-logo"></div></div>
+                <span class="fi-label">Drawing</span>
+            </div>
+            <div class="float-icon float-icon--2">
+                <div class="fi-card"><div class="fi-circle"><img src="assets/main-logo.png" alt="" class="fi-logo"></div></div>
+                <span class="fi-label">Coding</span>
+            </div>
+            <div class="float-icon float-icon--3">
+                <div class="fi-card"><div class="fi-circle"><img src="assets/main-logo.png" alt="" class="fi-logo"></div></div>
+                <span class="fi-label">Guitar</span>
+            </div>
+            <div class="float-icon float-icon--4">
+                <div class="fi-card"><div class="fi-circle"><img src="assets/main-logo.png" alt="" class="fi-logo"></div></div>
+                <span class="fi-label">Gym</span>
+            </div>
+            <div class="float-icon float-icon--5">
+                <div class="fi-card"><div class="fi-circle"><img src="assets/main-logo.png" alt="" class="fi-logo"></div></div>
+                <span class="fi-label">Writing</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <main id="features">
+        
+        <!-- New Section: Simple but powerful -->
+        <section class="feature-section section-simple">
+            <div class="simple-header reveal">
+                <h2>Simple, but powerful 💪</h2>
+                <p>Powerful features to help you reach your goals, without the complexity</p>
+            </div>
+            <div class="simple-grid">
+                <div class="simple-card reveal">
+                    <div class="simple-img-wrapper">
+                        <img src="assets/Simulator Screenshot - iPhone 16e - 2026-03-04 at 00.32.53-portrait.png" alt="Create custom skills and habits to track daily" loading="lazy">
+                    </div>
+                    <h3>Dedicated skill timers</h3>
+                    <p class="simple-desc">Create a skill for anything you practice. Tap Start when you begin, Stop when you're done, and Skills logs the time automatically.</p>
+                </div>
+                <div class="simple-card reveal reveal-delay-1">
+                    <div class="simple-img-wrapper">
+                        <img src="assets/Simulator Screenshot - iPhone 16e - 2026-03-04 at 12.28.03-portrait.png" alt="Daily habit tracking checklist and streak gamification" loading="lazy">
+                    </div>
+                    <h3>Streaks and daily goals</h3>
+                    <p class="simple-desc">Set a daily goal per skill. Practice each day to keep your streak going.</p>
+                </div>
+                <div class="simple-card reveal reveal-delay-2">
+                    <div class="simple-img-wrapper">
+                        <img src="assets/data.png" alt="GitHub style consistency heatmap and progress charts" loading="lazy">
+                    </div>
+                    <h3>Session history</h3>
+                    <p class="simple-desc">Every session is saved with the date, skill, and duration. Your dashboard makes it easy to spot your most consistent weeks.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Store Showcase Gallery -->
+        <section class="appstore-gallery-section" id="gallery">
+            <div class="gallery-header reveal">
+                <h2>Designed for <br><span class="text-gradient">consistency</span></h2>
+                <p>No vague "did I practice today?" moments. Just a clean log of where your hours went, plus a streak that makes you want to show up again tomorrow.</p>
+            </div>
+            <div class="gallery-container reveal">
+                <div class="gallery-track">
+                    <img src="assets/page1.png" alt="Streak tracking" class="gallery-item" loading="lazy">
+                    <img src="assets/page2.png" alt="Advanced analytics" class="gallery-item" loading="lazy">
+                    <img src="assets/page3.png" alt="Customization is key" class="gallery-item" loading="lazy">
+                    <img src="assets/page4.png" alt="Detailed History" class="gallery-item" loading="lazy">
+                    <img src="assets/page5.png" alt="Dark and Light mode" class="gallery-item" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section id="pricing" class="pricing-section reveal">
+            <div class="pricing-header">
+                <img src="assets/happy.png" alt="Start Mastery Today" class="pricing-mascot">
+                <h2>Start Mastery Today</h2>
+                <p>All features. Cancel anytime.</p>
+            </div>
+
+            <div class="pricing-grid">
+
+                <!-- Monthly -->
+                <div class="pricing-card">
+                    <span class="pricing-tier">MONTHLY</span>
+                    <div class="pricing-price">
+                        <span class="pricing-amount">$1.99</span>
+                        <span class="pricing-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Unlimited skills &amp; trackers</li>
+                        <li>Full stats, charts &amp; heatmaps</li>
+                        <li>Pomodoro focus sessions</li>
+                        <li>Custom themes &amp; accents</li>
+                        <li>Sessions edit &amp; data recovery</li>
+                    </ul>
+
+                </div>
+
+                <!-- Yearly (featured) -->
+                <div class="pricing-card pricing-card--featured">
+                    <div class="pricing-badge">58% OFF</div>
+                    <span class="pricing-tier">YEARLY</span>
+                    <div class="pricing-price">
+                        <span class="pricing-amount">$9.99</span>
+                        <span class="pricing-period">/year</span>
+                    </div>
+                    <p class="pricing-equiv">just $0.83 / month</p>
+                    <ul class="pricing-features">
+                        <li>Unlimited skills &amp; trackers</li>
+                        <li>Full stats, charts &amp; heatmaps</li>
+                        <li>Pomodoro focus sessions</li>
+                        <li>Custom themes &amp; accents</li>
+                        <li>Sessions edit &amp; data recovery</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="pricing-footer-links">
+                <a href="privacy-terms.html#terms">Terms</a>
+                <a href="privacy-terms.html#privacy">Privacy</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Final CTA & Footer -->
+    <footer id="premium" class="footer-cta">
+        <div class="cta-container reveal">
+            <h2>Ready to Level Up?</h2>
+            <p>Your future self will thank you. Start building today.</p>
+            <div class="store-badges" style="justify-content: center; margin-top: 0.5rem;">
+                <a href="#" class="app-store-badge">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                </a>
+                <a href="#" class="google-play-badge">
+                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+                </a>
+            </div>
+            <p class="premium-upsell">Unlock <span class="text-gradient">Premium</span> for lifetime history & infinite skills.</p>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="logo">
+                <img src="assets/main-logo.png" alt="Skills logo" class="logo-icon">
+                <span>Skills</span>
+            </div>
+            <div class="footer-links">
+                <a href="privacy-terms.html#privacy">Privacy</a>
+                <a href="privacy-terms.html#terms">Terms</a>
+                <a href="mailto:jiyuusoftware@gmail.com">Contact</a>
+            </div>
+            <p class="copyright">© 2026 Skills. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
