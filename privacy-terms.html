@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy & Terms - Skills</title>
+    <title>Privacy &amp; Terms - Skills</title>
     <meta name="description" content="Privacy Policy and Terms of Service for the Skills app.">
-    <link rel="canonical" href="https://yoursite.com/privacy-terms.html">
+    <link rel="canonical" href="https://skills.jiyuu.tech/privacy-terms.html">
 
     <!-- Google Fonts: Inter as the clean sans-serif -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -40,13 +40,14 @@
         <div class="legal-container">
             <section id="privacy" class="legal-section">
                 <h1>Privacy Policy</h1>
-                <p class="last-updated">Last updated: March 5, 2026</p>
+                <p class="last-updated">Last updated: September 18, 2026</p>
                 <p>Skills ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how your information is collected, used, and disclosed by the Skills application.</p>
                 
                 <h2>1. INFORMATION WE COLLECT</h2>
                 <ul>
                     <li><strong>Usage Data:</strong> We collect anonymous usage data (e.g., screens visited, features used) via PostHog to improve the app.</li>
-                    <li><strong>Local Data:</strong> Your skills, timers, streaks, and session history are stored locally on your device using an SQLite database (Drift).</li>
+                    <li><strong>Local Data:</strong> Your habits, entries, notes, streaks, and Focus session history are stored locally on your device with SwiftData, in an app group shared with the Skills widget. There is no account and no cloud sync: iCloud sync is disabled.</li>
+                    <li><strong>Apple Health:</strong> Health data is read only, one metric at a time, and only after you allow it. Skills never writes to Health, and no Health value and no habit content is ever sent to analytics.</li>
                     <li><strong>Purchase Information:</strong> If you make an in-app purchase, Apple and RevenueCat securely process the transaction. We do not have access to your payment details.</li>
                 </ul>
 
@@ -60,13 +61,13 @@
                 <h2>3. THIRD-PARTY SERVICES</h2>
                 <p>The app uses the following third-party services that may collect information used to identify you:</p>
                 <ul>
-                    <li>PostHog (Analytics)</li>
-                    <li>RevenueCat (Subscription Management)</li>
-                    <li>Supabase (Backend infrastructure)</li>
+                    <li>PostHog (Analytics) — opt-in, explicit events only, with no session replay and no autocapture.</li>
+                    <li>RevenueCat (Purchase management), together with Apple's App Store.</li>
                 </ul>
+                <p>Skills has no backend of its own. Your habit data never leaves your device.</p>
 
-                <h2>4. DATA RETENTION & DELETION</h2>
-                <p>Because your skill data and history are stored locally, you can delete this data at any time by uninstalling the app.</p>
+                <h2>4. DATA RETENTION &amp; DELETION</h2>
+                <p>Because your habit data and history are stored locally, you can export it as CSV, delete a habit in the app, or remove everything at once by uninstalling the app.</p>
 
                 <h2>5. CHANGES TO THIS PRIVACY POLICY</h2>
                 <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
@@ -79,23 +80,18 @@
 
             <section id="terms" class="legal-section">
                 <h1>Terms of Service</h1>
-                <p class="last-updated">Last updated: March 5, 2026</p>
+                <p class="last-updated">Last updated: September 18, 2026</p>
 
                 <h2>1. ACCEPTANCE OF TERMS</h2>
                 <p>By downloading or using the Skills app, these terms will automatically apply to you. You should read them carefully before using the app.</p>
 
                 <h2>2. DESCRIPTION OF SERVICE</h2>
-                <p>Skills is an application designed to help users track time spent learning and practicing various skills, maintain streaks, and view their progress history.</p>
+                <p>Skills is an application designed to help users track daily habits, log entries and notes, maintain streaks, run Focus sessions, and view their progress history.</p>
 
-                <h2>3. IN-APP PURCHASES & SUBSCRIPTIONS</h2>
+                <h2>3. IN-APP PURCHASES &amp; SUBSCRIPTIONS</h2>
                 <ul>
-                    <li>The app offers a free tier (limited to tracking 2 skills).</li>
-                    <li>Skills Premium is available as an auto-renewable subscription:
-                        <ul>
-                            <li><strong>Monthly:</strong> $1.99/month</li>
-                            <li><strong>Yearly:</strong> $9.99/year</li>
-                        </ul>
-                    </li>
+                    <li>The app offers a free tier limited to three active habits. The full report is also part of Premium. Everything else — reminders, statistics, the yearly chart, notes, moods, Focus, the Face ID lock and the CSV export — is free.</li>
+                    <li>Premium is sold as a one-time "Lifetime" purchase or as a subscription. The available plans, their prices, their currency and any free trial are the ones the App Store shows on the paywall at the time of purchase; this document names none of them.</li>
                     <li>Payment will be charged to your Apple ID account at the confirmation of purchase.</li>
                     <li>Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period.</li>
                     <li>You can manage or cancel your subscription at any time in your Apple ID account settings.</li>

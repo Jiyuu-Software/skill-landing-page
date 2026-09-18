@@ -2,13 +2,14 @@
 PRIVACY POLICY - SKILLS APP
 ========================================
 
-Last updated: March 5, 2026
+Last updated: September 18, 2026
 
 Skills ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how your information is collected, used, and disclosed by the Skills application.
 
 1. INFORMATION WE COLLECT
 - Usage Data: We collect anonymous usage data (e.g., screens visited, features used) via PostHog to improve the app.
-- Local Data: Your skills, timers, streaks, and session history are stored locally on your device using an SQLite database (Drift). 
+- Local Data: Your habits, entries, notes, streaks, and Focus session history are stored locally on your device with SwiftData, in an app group shared with the Skills widget. There is no account and no cloud sync: iCloud sync is disabled.
+- Apple Health: Health data is read only, one metric at a time, and only after you allow it. Skills never writes to Health, and no Health value and no habit content is ever sent to analytics.
 - Purchase Information: If you make an in-app purchase, Apple and RevenueCat securely process the transaction. We do not have access to your payment details.
 
 2. HOW WE USE YOUR INFORMATION
@@ -18,34 +19,35 @@ Skills ("we", "our", or "us") is committed to protecting your privacy. This Priv
 
 3. THIRD-PARTY SERVICES
 The app uses the following third-party services that may collect information used to identify you:
-- PostHog (Analytics)
-- RevenueCat (Subscription Management)
-- Supabase (Backend infrastructure)
+- PostHog (Analytics) — opt-in, explicit events only, with no session replay and no autocapture.
+- RevenueCat (Purchase management), together with Apple's App Store.
+
+Skills has no backend of its own. Your habit data never leaves your device.
 
 4. DATA RETENTION & DELETION
-Because your skill data and history are stored locally, you can delete this data at any time by uninstalling the app. 
+Because your habit data and history are stored locally, you can export it as CSV, delete a habit in the app, or remove everything at once by uninstalling the app.
 
 5. CHANGES TO THIS PRIVACY POLICY
 We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
 
 6. CONTACT US
-If you have any questions about this Privacy Policy, please contact us at: [INSERT SUPPORT EMAIL HERE]
+If you have any questions about this Privacy Policy, please contact us at: jiyuusoftware@gmail.com
 
 ========================================
 TERMS OF SERVICE - SKILLS APP
 ========================================
 
-Last updated: March 5, 2026
+Last updated: September 18, 2026
 
 1. ACCEPTANCE OF TERMS
 By downloading or using the Skills app, these terms will automatically apply to you. You should read them carefully before using the app.
 
 2. DESCRIPTION OF SERVICE
-Skills is an application designed to help users track time spent learning and practicing various skills, maintain streaks, and view their progress history.
+Skills is an application designed to help users track daily habits, log entries and notes, maintain streaks, run Focus sessions, and view their progress history.
 
 3. IN-APP PURCHASES & SUBSCRIPTIONS
-- The app offers a free tier (limited to tracking 2 skills).
-- Users can purchase a "Lifetime" or standard subscription via in-app purchases to unlock unlimited skills.
+- The app offers a free tier limited to three active habits. The full report is also part of Premium. Everything else — reminders, statistics, the yearly chart, notes, moods, Focus, the Face ID lock and the CSV export — is free.
+- Premium is sold as a one-time "Lifetime" purchase or as a subscription. The available plans, their prices, their currency and any free trial are the ones the App Store shows on the paywall at the time of purchase; this document names none of them.
 - Payment will be charged to your Apple ID account at the confirmation of purchase.
 - Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period.
 
@@ -65,4 +67,4 @@ We shall not be liable for any indirect, incidental, special, consequential, or 
 We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting.
 
 8. CONTACT
-For any questions regarding these terms, contact us at: [INSERT SUPPORT EMAIL HERE]
+For any questions regarding these terms, contact us at: jiyuusoftware@gmail.com
