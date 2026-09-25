@@ -1,30 +1,11 @@
 // script.js
 
 document.addEventListener('DOMContentLoaded', () => {
-    initThemeToggle();
     initSmoothScrolling();
     initScrollReveal();
     initNavbarScroll();
     initHamburger();
-    initParallax();
 });
-
-function initThemeToggle() {
-    const html = document.documentElement;
-    const themeBtn = document.getElementById('theme-toggle-btn');
-    const themeIcon = document.getElementById('theme-icon');
-
-    if (!themeBtn) return;
-
-    themeBtn.addEventListener('click', () => {
-        const currentTheme = html.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-        html.setAttribute('data-theme', newTheme);
-        themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
-        themeBtn.childNodes[themeBtn.childNodes.length - 1].textContent = newTheme === 'dark' ? ' Try Light Mode' : ' Try Dark Mode';
-    });
-}
 
 function initSmoothScrolling() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -93,29 +74,4 @@ function initHamburger() {
     });
 }
 
-function initParallax() {
-    const isMobile = window.matchMedia('(max-width: 768px)').matches;
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (isMobile || prefersReducedMotion) return;
-
-    const elements = document.querySelectorAll('[data-parallax]');
-    if (!elements.length) return;
-
-    let ticking = false;
-    window.addEventListener('scroll', () => {
-        if (!ticking) {
-            requestAnimationFrame(() => {
-                const scrollY = window.scrollY;
-                elements.forEach(el => {
-                    const speed = parseFloat(el.dataset.parallax);
-                    const rect = el.getBoundingClientRect();
-                    const offset = (rect.top + scrollY - window.innerHeight / 2) * speed;
-                    el.style.transform = `translateY(${offset}px)`;
-                });
-                ticking = false;
-            });
-            ticking = true;
-        }
-    }, { passive: true });
-}
 
